@@ -1,0 +1,46 @@
+/* Filename: day2_var_format.cpp
+ Description: program demonstrates declaration & initialization
+ of variables, escape sequences & formatting
+ Author: Nicole Covey
+ Date: 1/10/19
+ Modifications:
+ */
+ 
+ #include <iostream>
+ #include <iomanip> //input output manipulation control what shows. // fixed, showpoint, set, set precision, setfill
+ using namespace std;
+
+int main()
+{
+    //declare variables
+    int age; //users age
+    float price; //item price
+    char initial; //user's midle initial
+    float average; // average
+    
+    int day, //day
+        month, //month
+        year; //year
+        
+    // NO for CS 161: int day, month, year;
+    // NO for CS 161: int day = 12
+    
+    //initialize variables
+    age = 22;
+    cout << fixed << showpoint; // fix to show decimal points
+    cout << setprecision(2); //show () numbers
+    price = 13.7239568;
+    initial = 'N';
+    average = 3.4123435;
+    
+    //out variables
+    cout << "Age = " << setw(14) << age << endl;
+    cout << fixed << showpoint << setfill('*');
+    cout << "Price = " << setw(10) << "$" << price << endl;
+    cout << "Initial = " << setw(9) << initial << endl;
+    cout << "Average = " << setw(12) << average << endl;
+    
+    cout << "Nicole's file location: c:\\desktop\\cs161\n";
+    
+    return 0;
+}
